@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Class 29 Assignment</title>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="main.min.css">
+</head>
+<body>
+
+  <fieldset>
+    <legend>Slider [Color Picker]</legend>
+    <div class="color-picker">
+      <div class="bars">
+        <div class="bar red"></div>
+        <div class="bar green"></div>
+        <div class="bar blue"></div>
+      </div>
+      <div class="colorBox"></div>
+    </div>
+  </fieldset>
+
+  <fieldset class="range">
+    <legend>Slider [Range]</legend>
+    <p>
+      <label for="amount">Price range:</label>
+      <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+    </p>
+    <div id="slider-range"></div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Spinner</legend>
+
+    <!-- Default -->
+    <fieldset>
+      <legend>Default</legend>
+      <p>
+        <label for="spinner">Select a value:</label>
+        <input id="spinner" name="value">
+      </p>
+
+      <p>
+        <button id="disable">Toggle disable/enable</button>
+        <button id="destroy">Toggle widget</button>
+      </p>
+
+      <p>
+        <button id="getvalue">Get value</button>
+        <button id="setvalue">Set value to 5</button>
+      </p>
+    </fieldset>
+
+    <!-- map -->
+    <fieldset>
+      <legend>Map</legend>
+      <div class="latlong">
+        <label for="lat">Latitude</label>
+        <input id="latitude">
+
+        <label for="long">Longitude</label>
+        <input id="longitude">
+      </div>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14573.00007368793!2d90.9916285!3d24.0574986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1621921364011!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </fieldset>
+  </fieldset>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

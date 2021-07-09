@@ -1,0 +1,66 @@
+// Class 29 Assignment
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+fieldset{
+  margin: 10px;
+  padding: 20px;
+  legend{
+    padding: 0px 10px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+
+
+.color-picker{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .bars{
+    width: 50%;
+    display: inline-block;
+    .bar{
+      margin-bottom: 30px;
+      span:focus{
+        outline: none;
+      }
+    }
+    .red{
+      background-color: red;
+      span{
+        border: 1px solid red;
+      }
+    }
+    .green{
+      background-color: green;
+      span{
+        border: 1px solid green;
+      }
+    }
+    .blue{
+      background-color: blue;
+      span{
+        border: 1px solid blue;
+      }
+    }
+  }
+  .colorBox{
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 86px 0px;
+    border-radius: 5px;
+  }
+}
+
+#amount:focus{outline: none;}
+#slider-range{margin-top: 10px;}
+
+button{margin: 10px;}
+iframe{margin-top: 16px;}
